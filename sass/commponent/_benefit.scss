@@ -1,0 +1,19 @@
+.benefit__thumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  margin-bottom: 30px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.benefit__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: var(--header-color);
+  text-transform: uppercase;
+}

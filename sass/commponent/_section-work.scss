@@ -1,0 +1,25 @@
+.work {
+  padding: 0 0 94px 0;
+}
+
+.work__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+.work__list {
+  display: flex;
+}
+
+.work__item {
+  width: calc((100% - 60px) / 3);
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
