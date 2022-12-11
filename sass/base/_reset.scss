@@ -41,3 +41,14 @@ button {
   cursor: pointer;
   font-family: inherit;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.preload * {
+  transition: none !important;
+}

@@ -17,8 +17,6 @@
 }
 
 .application__text {
-  font-weight: 700;
-  line-height: calc(16 / 14);
-  color: #ffffff;
+  @include font(700, 14px, 16px, 0.03em, var(--second-color));
   text-transform: uppercase;
 }

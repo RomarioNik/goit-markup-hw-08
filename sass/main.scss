@@ -1,4 +1,6 @@
+@import './base/modern-normalize';
 @import './base/variables';
+@import './utils/mixins';
 @import './base/reset';
 @import './base/base';
 
@@ -16,6 +18,8 @@
 // components
 @import './commponent/logo';
 @import './commponent/menu';
+@import './commponent/social-links';
+@import './commponent/button-menu';
 @import './commponent/contacts';
 @import './commponent/benefit';
 @import './commponent/application';

@@ -1,6 +1,12 @@
-.address__list:not(:last-child) {
-  margin-bottom: 9px;
+.address {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
+
+// .address__list:not(:last-child) {
+//   margin-bottom: 9px;
+// }
 
 .address__item:not(:last-child) {
   margin-bottom: 9px;

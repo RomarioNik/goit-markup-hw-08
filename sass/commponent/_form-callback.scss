@@ -27,20 +27,10 @@
   fill: currentColor;
 }
 
-.callback-form__title {
-  margin-bottom: 12px;
-
-  font-weight: 700;
-  font-size: 20px;
-  line-height: calc(23 / 20);
-  color: var(--header-color);
-  text-align: center;
-}
-
 .callback-form__label {
-  font-size: 12px;
-  line-height: calc(14 / 12);
-  letter-spacing: 0.01em;
+  display: inline-block;
+  margin-bottom: 4px;
+  @include font(400, 12px, 14px, 0.01em, var(--text-color));
 }
 
 .callback-form__input-wrap {
@@ -98,22 +88,26 @@
   }
 
   &::placeholder {
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
+    @include font(400, 12px, 14px, 0.01em, rgba(117, 117, 117, 0.5));
+  }
+}
+
+.callback-form__checkbox-wrap {
+  display: flex;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
   }
 }
 
 .callback-form__label-checkbox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin-bottom: 30px;
-  line-height: calc(24 / 14);
-  color: #757575;
+  @include font(400, 12px, 14px, 0.03em, var(--text-color));
   user-select: none;
+
+  @media screen and (min-width: 1200px) {
+    @include font(400, 14px, 24px, 0.03em, var(--text-color));
+  }
 }
 
 .callback-form__checkbox {

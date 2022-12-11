@@ -1,5 +1,7 @@
 .product {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms var(--base-transition);
 
   &:hover,
@@ -38,12 +40,14 @@
 }
 
 .product__text-about {
-  font-size: 18px;
-  line-height: calc(28 / 18);
-  color: #ffffff;
+  @include font(400, 18px, 28px, 0.03em, var(--second-color));
 }
 
 .product__wrap-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -52,16 +56,9 @@
 
 .product__title {
   margin-bottom: 4px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.3px;
+  @include font(700, 18px, 36px, 0.06em, var(--header-color));
 }
 
 .product__text {
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.3px;
-  color: var(--text-color);
+  @include font(400, 16px, 30px, 0.03em, var(--text-color));
 }
